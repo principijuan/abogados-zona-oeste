@@ -1,0 +1,32 @@
+.contactoWhatsapp {
+  background-color: $wspColor;
+  border-radius: $borderRadius;
+}
+
+header {
+  background-color: darkslategrey;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/mariano_moreno.png");
+  background-size: cover;
+  background-position: center;
+  height: 1080px;
+  gap: 20px;
+  .logoBienvenida {
+    min-width: 100px;
+    width: 10vw;
+    box-shadow: $boxShadow;
+    // filter:drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+    //   drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
+    //   drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  }
+  h1 {
+    color: aliceblue;
+    font-family: "Archivo", sans-serif;
+  }
+}
