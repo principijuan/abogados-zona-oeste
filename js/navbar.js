@@ -1,11 +1,11 @@
 // selecciona la imagen de bienvenida
-var imagenBienvenida = document.querySelector(".imagenBienvenida");
+var imagenBienvenida = document.querySelector("#bienvenida");
 
 // selecciona la barra de navegación
-var navbar = document.querySelector(".navbar");
+var navbar = document.querySelector(".nav_bar");
 
 // obtiene la altura de la imagen de bienvenida
-var imagenBienvenida = imagenBienvenida.offsetHeight;
+var bienvenida = bienvenida.offsetHeight;
 
 // agrega un evento de desplazamiento a la ventana
 window.addEventListener("scroll", function () {

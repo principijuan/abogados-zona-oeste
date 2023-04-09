@@ -28,49 +28,58 @@
     <header>
       <section class="bienvenida">
         <svg src="./img/logo/logo_blanco.svg"></svg>
-        <img
-          src="./img/logo/logo_blanco.svg"
-          alt=""
-          class="logoBienvenida imagenBienvenida"
-        />
+        <img src="./img/logo/logo_blanco.svg" alt="" class="logoBienvenida" />
         <h1>Abogados Zona Oeste</h1>
       </section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Abogados Zona Oeste</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
+        <div class="container-fluid containerNavBar">
+          <div class="navBarLogo">
+            <img src="./img/logo/logo_blanco.svg" alt="" />
+            <h5>Abogados Zona Oeste</h5>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="navBarItems collapse navbar-collapse"
+            id="navbarSupportedContent"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item contactoWhatsapp">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#sectionContact"
-                  >Soluciones ya</a
-                >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button class="btn btn-success btnContact">
+                  <a
+                    href="https://wa.me/5491130693199"
+                    target="_blank"
+                    class="btnContact"
+                    >Contactanos ya 💬</a
+                  >
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="navItem" aria-current="page" href="#quienesSomos"
                   >Quienes somos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="navItem" aria-current="page" href="#servicios"
                   >Servicios</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="navItem" aria-current="page" href="#eleginos"
+                  >Por qué elegirnos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="navItem" aria-current="page" href="#sectionContact"
                   >Contacto</a
                 >
               </li>
@@ -80,9 +89,162 @@
       </nav>
     </header>
     <main>
-      <section id="sobreNosotros"></section>
-      <section id="servicios"></section>
+      <section id="quienesSomos">
+        <div class="quienesSomosImagen">
+          <img src="./img/ilustracion_quienesSomos.svg" alt="" />
+        </div>
+        <div class="quienesSomosTexto">
+          <h3>¿Quiénes somos?</h3>
+          <p>
+            Somos un grupo de abogados y abogadas con más de una década de
+            experiencia y trayectoria en la profesión. Siempre buscamos la
+            solución más rápida para nuestros casos, con el mejor resultado
+            posible. Tenemos nuestro estudio en el centro de Moreno y estamos
+            disponibles para atenderte en todo momento. Si nos dejas un mensaje,
+            nos pondremos en contacto contigo lo antes posible para empezar a
+            trabajar.
+          </p>
+          <p>
+            En nuestro estudio contamos con un equipo de profesionales
+            interdisciplinario que incluye abogados especializados en distintas
+            materias, servicios de escribanía, médicos legistas, psicólogos,
+            mediadores y notificadores. De esta manera, podemos abordar
+            ampliamente las temáticas que trabajamos.
+          </p>
+          <p>
+            La eficacia, eficiencia y velocidad son los tres pilares de nuestro
+            estudio, ya que buscamos la satisfacción del cliente, especialmente
+            de aquellos que están cansados de la demora para obtener JUSTICIA.
+          </p>
+          <button class="btn btn-success btnContact">
+            <a href="https://wa.me/5491130693199" target="_blank"
+              >Contactanos ya 💬</a
+            >
+          </button>
+        </div>
+      </section>
+      <section id="servicios">
+        <div class="sectionTitle">
+          <h2>¿Qué servicios brindamos?</h2>
+        </div>
+        <div class="cardServiciosContainer">
+          <div class="cardServicios card" style="width: 18rem">
+            <div class="cardHeader">
+              <h3>📝</h3>
+              <h6>Escribania</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Un escribano es un profesional del derecho que se encarga de dar
+                fe y autenticidad a los documentos legales, mediante su
+                redacción y firma. También se encarga de la legalización y
+                registro de los mismos.
+              </p>
+            </div>
+          </div>
+          <div class="cardServicios card" style="width: 18rem">
+            <div class="cardHeader">
+              <h3>🩺</h3>
+              <h6>Médico legista</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Un médico legista es un profesional de la medicina que se
+                encarga de investigar las causas de las muertes violentas o
+                sospechosas, así como de realizar peritajes médicos en casos
+                judiciales.
+              </p>
+            </div>
+          </div>
+          <div class="cardServicios card" style="width: 18rem">
+            <div class="cardHeader">
+              <h3>🧠</h3>
+              <h6>Psicólogos</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Un psicólogo es un profesional que se dedica al estudio y
+                tratamiento de los procesos mentales y del comportamiento
+                humano, con el objetivo de mejorar la calidad de vida de las
+                personas y ayudarles a superar dificultades emocionales y
+                psicológicas.
+              </p>
+            </div>
+          </div>
+          <div class="cardServicios card" style="width: 18rem">
+            <div class="cardHeader">
+              <h3>🤝</h3>
+              <h6>Mediadores</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Un mediador es un profesional que actúa como intermediario en la
+                resolución de conflictos entre dos o más partes, buscando un
+                acuerdo justo y equilibrado que satisfaga los intereses de ambas
+                partes.
+              </p>
+            </div>
+          </div>
+          <div class="cardServicios card" style="width: 18rem">
+            <div class="cardHeader">
+              <h2>📩</h2>
+              <h6>Notificadores</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Un notificador es un profesional que se encarga de hacer llegar
+                a su destinatario documentos legales y notificaciones
+                judiciales, asegurando la legalidad y autenticidad de los
+                mismos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="eleginos">
+        <div class="sectionTitle">
+          <h2>¿Por qué elegirnos?</h2>
+        </div>
+        <div class="porqueContainer">
+          <div class="porqueCard">
+            <div class="porqueTitulo">
+              <h1>A</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              recusandae dignissimos nam velit a eos error expedita voluptate
+              placeat ipsam mollitia officia iusto, odit non repellendus. Rem
+              tenetur deleniti atque!
+            </p>
+          </div>
+          <div class="porqueCard">
+            <div class="porqueTitulo">
+              <h1>B</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              recusandae dignissimos nam velit a eos error expedita voluptate
+              placeat ipsam mollitia officia iusto, odit non repellendus. Rem
+              tenetur deleniti atque!
+            </p>
+          </div>
+          <div class="porqueCard">
+            <div class="porqueTitulo">
+              <h1>C</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+              recusandae dignissimos nam velit a eos error expedita voluptate
+              placeat ipsam mollitia officia iusto, odit non repellendus. Rem
+              tenetur deleniti atque!
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="sectionContact">
+        <div class="sectionTitle">
+          <h2>Contactanos</h2>
+        </div>
         <div>
           <form id="contact-form" method="post">
             <div class="form-group">
@@ -120,49 +282,11 @@
         </div>
       </section>
     </main>
-    <div class="container footerStyle">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary"
-            >Abogados Zona Oeste</span
-          >
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <footer>
+      <div>
+        <h1>holaaaa</h1>
+      </div>
+    </footer>
     <script src="/js/navbar.js"></script>
     <script src="/js/contacto.js"></script>
   </body>

@@ -1,0 +1,25 @@
+#quienesSomos {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    font-family: "Archivo", sans-serif;
+  }
+  .quienesSomosImagen {
+    width: 50%;
+    margin: 5vh;
+  }
+  .quienesSomosTexto {
+    width: 75%;
+    margin: 2vh;
+  }
+
+  .btnContact a {
+    text-decoration: none;
+    color: $secondaryColor;
+  }
+}

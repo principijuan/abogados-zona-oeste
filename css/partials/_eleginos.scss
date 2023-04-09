@@ -1,0 +1,33 @@
+#eleginos {
+  .sectionTitle h2 {
+    margin: auto;
+    text-align: center;
+  }
+  .porqueContainer {
+    display: flex;
+    margin-top: 10vh;
+    .porqueCard {
+      width: 20vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+      .porqueTitulo {
+        border-radius: 100%;
+        box-shadow: $boxShadow;
+        width: 10vh;
+        height: 10vh;
+        text-align: center;
+        vertical-align: bottom;
+        h1 {
+          margin: 0;
+          vertical-align: bottom;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

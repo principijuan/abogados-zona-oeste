@@ -1,11 +1,12 @@
-.footerStyle {
+@charset "UTF-8";
+footer {
   background-color: #2c3f46;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.contactoWhatsapp {
-  background-color: #32ba46;
-  border-radius: 6px;
+footer h1 {
+  margin: 0;
 }
 
 header {
@@ -26,11 +27,75 @@ header {
 .bienvenida .logoBienvenida {
   min-width: 100px;
   width: 10vw;
-  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0);
+  filter: drop-shadow(-3px -3px -2px rgba 255, 255, 255, 5);
 }
 .bienvenida h1 {
-  color: aliceblue;
+  color: #ffffff;
   font-family: "Archivo", sans-serif;
+}
+
+.containerNavBar {
+  display: flex;
+  justify-content: space-between;
+}
+.containerNavBar .navBarLogo {
+  font-family: "Archivo", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  vertical-align: bottom;
+  gap: 2vh;
+}
+.containerNavBar .navBarLogo img {
+  width: 30px;
+}
+.containerNavBar .navBarItems {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+}
+.containerNavBar .navBarItems .nav-item {
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+  align-items: center;
+  margin: 0vh 2vh;
+}
+
+.nav_bar {
+  position: sticky; /* permite que la barra de navegación se fije en la parte superior de la página */
+  top: 0; /* coloca la barra de navegación en la parte superior de la página */
+  background-color: #2c3f46 !important;
+  display: flex;
+  color: #ffffff;
+}
+
+.nav_bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* asegura que la barra de navegación esté en la parte superior de todo */
+}
+
+.navItem {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.btnContact {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionTitle h2 {
+  padding: 4vh;
 }
 
 .form-group {
@@ -93,4 +158,87 @@ textarea:focus {
   margin: auto;
   margin-top: 40vh;
   margin-bottom: 40vh;
+}
+
+#quienesSomos {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#quienesSomos h2 {
+  font-family: "Archivo", sans-serif;
+}
+#quienesSomos .quienesSomosImagen {
+  width: 50%;
+  margin: 5vh;
+}
+#quienesSomos .quienesSomosTexto {
+  width: 75%;
+  margin: 2vh;
+}
+#quienesSomos .btnContact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#servicios {
+  background-color: #2c3f46;
+  color: #ffffff;
+}
+#servicios h2 {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+}
+#servicios .cardServiciosContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2vh;
+  margin: auto;
+}
+#servicios .cardServicios {
+  min-height: 40vh;
+  margin-bottom: 6vh;
+}
+#servicios .cardServicios .cardHeader {
+  margin: auto;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+#eleginos .sectionTitle h2 {
+  margin: auto;
+  text-align: center;
+}
+#eleginos .porqueContainer {
+  display: flex;
+  margin-top: 10vh;
+}
+#eleginos .porqueContainer .porqueCard {
+  width: 20vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+#eleginos .porqueContainer .porqueCard .porqueTitulo {
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+  width: 10vh;
+  height: 10vh;
+  text-align: center;
+  vertical-align: bottom;
+}
+#eleginos .porqueContainer .porqueCard .porqueTitulo h1 {
+  margin: 0;
+  vertical-align: bottom;
+}
+#eleginos .porqueContainer .porqueCard p {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

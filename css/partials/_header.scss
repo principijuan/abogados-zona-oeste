@@ -1,8 +1,3 @@
-.contactoWhatsapp {
-  background-color: $wspColor;
-  border-radius: $borderRadius;
-}
-
 header {
   background-color: darkslategrey;
 }
@@ -20,13 +15,64 @@ header {
   .logoBienvenida {
     min-width: 100px;
     width: 10vw;
-    box-shadow: $boxShadow;
-    // filter:drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
-    //   drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
-    //   drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(-3px -3px -2px rgba (255, 255, 255, 5));
   }
   h1 {
-    color: aliceblue;
-    font-family: "Archivo", sans-serif;
+    color: $secondaryColor;
+    font-family: $font;
   }
+}
+
+.containerNavBar {
+  display: flex;
+  justify-content: space-between;
+  .navBarLogo {
+    font-family: $font;
+    color: $secondaryColor;
+    display: flex;
+    flex-direction: row;
+    vertical-align: bottom;
+    gap: 2vh;
+    img {
+      width: 30px;
+    }
+  }
+  .navBarItems {
+    display: flex;
+    justify-content: flex-end;
+    color: $secondaryColor;
+    .nav-item {
+      display: flex;
+      flex-direction: row;
+      gap: 2vh;
+      align-items: center;
+      margin: 0vh 2vh;
+    }
+  }
+}
+
+.nav_bar {
+  position: sticky; /* permite que la barra de navegación se fije en la parte superior de la página */
+  top: 0; /* coloca la barra de navegación en la parte superior de la página */
+  background-color: $primaryColor !important;
+  display: flex;
+  color: $secondaryColor;
+}
+
+.nav_bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* asegura que la barra de navegación esté en la parte superior de todo */
+}
+
+.navItem {
+  color: $secondaryColor !important;
+  text-decoration: none;
+}
+
+.btnContact {
+  text-decoration: none;
+  color: $secondaryColor;
 }
