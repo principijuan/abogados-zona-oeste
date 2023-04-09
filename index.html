@@ -54,16 +54,6 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <button class="btn btn-success btnContact">
-                  <a
-                    href="https://wa.me/5491130693199"
-                    target="_blank"
-                    class="btnContact"
-                    >Contactanos ya 💬</a
-                  >
-                </button>
-              </li>
-              <li class="nav-item">
                 <a class="navItem" aria-current="page" href="#quienesSomos"
                   >Quienes somos</a
                 >
@@ -82,6 +72,18 @@
                 <a class="navItem" aria-current="page" href="#sectionContact"
                   >Contacto</a
                 >
+              </li>
+              <li class="nav-item">
+                <button class="botonWhatsapp">
+                  <img
+                    src="./img/whatsapp.svg"
+                    alt="logo de Whatsapp"
+                    class="logoWhatsapp"
+                  />
+                  <a href="https://wa.me/5491130693199" target="_blank"
+                    >Whatsapp</a
+                  >
+                </button>
               </li>
             </ul>
           </div>
@@ -116,10 +118,13 @@
             estudio, ya que buscamos la satisfacción del cliente, especialmente
             de aquellos que están cansados de la demora para obtener JUSTICIA.
           </p>
-          <button class="btn btn-success btnContact">
-            <a href="https://wa.me/5491130693199" target="_blank"
-              >Contactanos ya 💬</a
-            >
+          <button class="botonWhatsapp">
+            <img
+              src="./img/whatsapp.svg"
+              alt="logo de Whatsapp"
+              class="logoWhatsapp"
+            />
+            <a href="https://wa.me/5491130693199" target="_blank">Whatsapp</a>
           </button>
         </div>
       </section>
@@ -128,9 +133,13 @@
           <h2>¿Qué servicios brindamos?</h2>
         </div>
         <div class="cardServiciosContainer">
-          <div class="cardServicios card" style="width: 18rem">
+          <div class="cardServicios">
             <div class="cardHeader">
-              <h3>📝</h3>
+              <img
+                src="./img/servicios/documento.png"
+                alt="ilustración de un documento"
+                class="serviciosPNG"
+              />
               <h6>Escribania</h6>
             </div>
             <div class="card-body">
@@ -142,9 +151,13 @@
               </p>
             </div>
           </div>
-          <div class="cardServicios card" style="width: 18rem">
+          <div class="cardServicios">
             <div class="cardHeader">
-              <h3>🩺</h3>
+              <img
+                src="./img/servicios/estetoscopio.png"
+                alt="ilustración de un documento"
+                class="serviciosPNG"
+              />
               <h6>Médico legista</h6>
             </div>
             <div class="card-body">
@@ -156,9 +169,13 @@
               </p>
             </div>
           </div>
-          <div class="cardServicios card" style="width: 18rem">
+          <div class="cardServicios">
             <div class="cardHeader">
-              <h3>🧠</h3>
+              <img
+                src="./img/servicios/cerebro.png"
+                alt="ilustración de un documento"
+                class="serviciosPNG"
+              />
               <h6>Psicólogos</h6>
             </div>
             <div class="card-body">
@@ -171,9 +188,13 @@
               </p>
             </div>
           </div>
-          <div class="cardServicios card" style="width: 18rem">
+          <div class="cardServicios">
             <div class="cardHeader">
-              <h3>🤝</h3>
+              <img
+                src="./img/servicios/apreton-de-manos.png"
+                alt="ilustración de un documento"
+                class="serviciosPNG"
+              />
               <h6>Mediadores</h6>
             </div>
             <div class="card-body">
@@ -185,9 +206,13 @@
               </p>
             </div>
           </div>
-          <div class="cardServicios card" style="width: 18rem">
+          <div class="cardServicios">
             <div class="cardHeader">
-              <h2>📩</h2>
+              <img
+                src="./img/servicios/leer-el-mensaje.png"
+                alt="ilustración de un documento"
+                class="serviciosPNG"
+              />
               <h6>Notificadores</h6>
             </div>
             <div class="card-body">
@@ -197,6 +222,96 @@
                 judiciales, asegurando la legalidad y autenticidad de los
                 mismos.
               </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Derecho Penal
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <li>Defensa penal</li>
+                <li>Habeas corpus</li>
+                <li>Excarcelación / Eximición</li>
+                <li>Denuncias y querellas</li>
+                <li>Informes técnicos y asistencia en Cámara Gessel</li>
+                <li>Proceso de ejecución penal</li>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Derecho Laboral
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <li>Despido</li>
+                  <li>Despido indirecto</li>
+                  <li>ART</li>
+                  <li>Liquidaciones</li>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,39 +360,64 @@
         <div class="sectionTitle">
           <h2>Contactanos</h2>
         </div>
-        <div>
-          <form id="contact-form" method="post">
-            <div class="form-group">
-              <label for="name">Nombre:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                required
-              />
+        <div class="contactContainer">
+          <div class="infoContact">
+            <div>
+              <h4>¿Dónde estamos?</h4>
+              <p>Aristóbulo Del Valle 2884</p>
+              <p>CP: 1744, Moreno, Buenos Aires</p>
+              <p>Uruguay 627 PB "A"</p>
+              <p>CP: 1015, Ciudad Autónoma de Buenos Aires</p>
             </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                required
-              />
+            <div>
+              <h4>Contáctenos</h4>
+              <p>Whatsapp:</p>
+              <p>+54 9 11 2478 7972</p>
+              <p>Email:</p>
+              <p>info@estudiojuridicorodriguezfraga.com</p>
+              <p>Teléfono de emergencias:</p>
+              <p>+54 9 2324 52 0708</p>
             </div>
-            <div class="form-group">
-              <label for="message">Mensaje:</label>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                required
-              ></textarea>
+            <div>
+              <h4>Horarios</h4>
+              <p>Lunes a viernes</p>
+              <p>11 a 19 hs</p>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+          </div>
+          <div>
+            <form id="contact-form" method="post">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
           <script src="/app.js"></script>
         </div>
       </section>

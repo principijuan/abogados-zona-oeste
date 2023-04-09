@@ -7,3 +7,20 @@ body {
 .sectionTitle h2 {
   padding: 4vh;
 }
+
+.botonWhatsapp {
+  background-color: $wspColor;
+  border: none;
+  border-radius: $borderRadius;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  padding: 1vh 2vh;
+  .logoWhatsapp {
+    width: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: $secondaryColor;
+  }
+}

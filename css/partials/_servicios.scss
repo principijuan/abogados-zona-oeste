@@ -10,17 +10,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     gap: 2vh;
     margin: auto;
   }
   .cardServicios {
-    min-height: 40vh;
     margin-bottom: 6vh;
+    background-color: $secondaryColor;
+    color: #000000;
+    border-radius: $borderRadius;
     .cardHeader {
       margin: auto;
       margin-top: 2vh;
       text-align: center;
     }
+    .card-body {
+      margin: 2vh;
+    }
+    .card-text {
+      width: 30vh;
+    }
   }
+}
+
+.accordion {
+  width: 40vw;
+  margin: auto;
 }

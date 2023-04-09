@@ -49,8 +49,24 @@ textarea:focus {
 }
 
 #sectionContact {
-  width: 25%;
+  width: 75%;
   margin: auto;
   margin-top: 40vh;
   margin-bottom: 40vh;
+  .sectionTitle {
+    text-align: center;
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: space-around;
+    .infoContact {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+    }
+  }
+  .contact-form {
+    width: 20vh;
+  }
 }

@@ -98,6 +98,23 @@ body {
   padding: 4vh;
 }
 
+.botonWhatsapp {
+  background-color: #25d366;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  padding: 1vh 2vh;
+}
+.botonWhatsapp .logoWhatsapp {
+  width: 15px;
+}
+.botonWhatsapp a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -154,10 +171,26 @@ textarea:focus {
 }
 
 #sectionContact {
-  width: 25%;
+  width: 75%;
   margin: auto;
   margin-top: 40vh;
   margin-bottom: 40vh;
+}
+#sectionContact .sectionTitle {
+  text-align: center;
+}
+#sectionContact .contactContainer {
+  display: flex;
+  justify-content: space-around;
+}
+#sectionContact .contactContainer .infoContact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+#sectionContact .contact-form {
+  width: 20vh;
 }
 
 #quienesSomos {
@@ -197,18 +230,31 @@ textarea:focus {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
   gap: 2vh;
   margin: auto;
 }
 #servicios .cardServicios {
-  min-height: 40vh;
   margin-bottom: 6vh;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 6px;
 }
 #servicios .cardServicios .cardHeader {
   margin: auto;
   margin-top: 2vh;
   text-align: center;
+}
+#servicios .cardServicios .card-body {
+  margin: 2vh;
+}
+#servicios .cardServicios .card-text {
+  width: 30vh;
+}
+
+.accordion {
+  width: 40vw;
+  margin: auto;
 }
 
 #eleginos .sectionTitle h2 {
