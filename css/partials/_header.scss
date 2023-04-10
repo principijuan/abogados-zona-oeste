@@ -57,6 +57,7 @@ header {
   background-color: $primaryColor !important;
   display: flex;
   color: $secondaryColor;
+  box-shadow: $boxShadow;
 }
 
 .nav_bar.fixed {

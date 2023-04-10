@@ -1,29 +1,42 @@
 #eleginos {
+  background-color: $primaryColor;
   .sectionTitle h2 {
     margin: auto;
     text-align: center;
+    color: $secondaryColor;
   }
   .porqueContainer {
     display: flex;
-    margin-top: 10vh;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 6vh;
+    gap: 10vh;
     .porqueCard {
-      width: 20vh;
-      margin: auto;
+      width: 35vh;
+      padding: 4vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4vh;
+      background-color: $backgroundColor;
+      border-radius: $borderRadius;
       .porqueTitulo {
         border-radius: 100%;
         box-shadow: $boxShadow;
         width: 10vh;
         height: 10vh;
         text-align: center;
-        vertical-align: bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         h1 {
           margin: 0;
           vertical-align: bottom;
+          color: $secondaryColor;
         }
+      }
+      h2 {
+        text-align: center;
       }
       p {
         text-align: center;

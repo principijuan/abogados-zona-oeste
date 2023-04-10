@@ -1,11 +1,11 @@
 // selecciona la imagen de bienvenida
-var imagenBienvenida = document.querySelector("#bienvenida");
+var imagenBienvenida = document.querySelector("#bienvenidaID");
 
 // selecciona la barra de navegación
 var navbar = document.querySelector(".nav_bar");
 
 // obtiene la altura de la imagen de bienvenida
-var bienvenida = bienvenida.offsetHeight;
+var bienvenida = imagenBienvenida.offsetHeight;
 
 // agrega un evento de desplazamiento a la ventana
 window.addEventListener("scroll", function () {
@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
     0;
 
   // si el usuario se ha desplazado más allá de la imagen de bienvenida
-  if (scrollPosition > welcomeImageHeight) {
+  if (scrollPosition > bienvenida) {
     // agrega la clase 'fixed' a la barra de navegación
     navbar.classList.add("fixed");
   } else {

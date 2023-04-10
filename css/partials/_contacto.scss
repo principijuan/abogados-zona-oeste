@@ -51,8 +51,8 @@ textarea:focus {
 #sectionContact {
   width: 75%;
   margin: auto;
-  margin-top: 40vh;
-  margin-bottom: 40vh;
+  margin-top: 8vh;
+  margin-bottom: 10vh;
   .sectionTitle {
     text-align: center;
   }
@@ -68,5 +68,14 @@ textarea:focus {
   }
   .contact-form {
     width: 20vh;
+  }
+}
+
+.formularioContacto {
+  width: 50vh;
+  .formularioMensaje {
+    height: 40vh;
+    max-height: 40vh;
+    vertical-align: top;
   }
 }

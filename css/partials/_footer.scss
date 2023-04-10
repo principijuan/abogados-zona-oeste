@@ -3,7 +3,12 @@ footer {
   width: 100%;
   margin: 0;
   padding: 0;
-  h1 {
-    margin: 0;
+  .legalesFooter {
+    color: $secondaryColor;
+    text-align: center;
+    padding: 2vh;
+    font-weight: 200;
+    font-size: 0.75rem;
+    margin-bottom: 0px;
   }
 }

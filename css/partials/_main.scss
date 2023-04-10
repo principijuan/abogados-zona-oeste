@@ -24,3 +24,19 @@ body {
     color: $secondaryColor;
   }
 }
+
+.imagenIntermedia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/mariano_moreno.png");
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $secondaryColor;
+    font-family: $font;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
