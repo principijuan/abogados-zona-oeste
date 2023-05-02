@@ -83,7 +83,7 @@ textarea:focus {
       width: 100%;
       gap: 2vh;
       .infoColumn {
-        width: 30%;
+        width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -105,7 +105,8 @@ textarea:focus {
 }
 
 .formularioContacto {
-  width: 50vh;
+  width: 70vw;
+  max-width: 90vh;
   .formularioMensaje {
     height: 40vh;
     max-height: 40vh;

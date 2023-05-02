@@ -4,6 +4,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   btn.value = "Enviando...";
+  btn.class = "";
 
   const serviceID = "default_service";
   const templateID = "template_1igf6ty";

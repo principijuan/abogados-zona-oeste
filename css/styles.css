@@ -19,7 +19,7 @@ footer .legalesFooter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../../img/mariano_moreno.png");
+  background-image: url("../../img/mariano_moreno.webp");
   background-size: cover;
   background-position: center;
   height: 1080px;
@@ -121,7 +121,7 @@ body {
 }
 
 .imagenIntermedia {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../img/tribunales.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../img/tribunales.webp");
   background-size: cover;
   background-position: top;
   height: 80vh;
@@ -230,7 +230,7 @@ textarea:focus {
   gap: 2vh;
 }
 #sectionContact .contactContainer .infoContact .infoColumn {
-  width: 30%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,7 +249,8 @@ textarea:focus {
 }
 
 .formularioContacto {
-  width: 50vh;
+  width: 70vw;
+  max-width: 90vh;
 }
 .formularioContacto .formularioMensaje {
   height: 40vh;
