@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/logo/favicon.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Bootstrap -->
     <link
@@ -37,7 +45,7 @@
             <img src="./img/logo/logo_blanco.svg" alt="" />
             <h5>Abogados Zona Oeste</h5>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler justify-content-end"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -49,13 +57,13 @@
             </button>
           </div>
           <div
-            class="navBarItems collapse navbar-collapse"
+            class="navBarItems collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="navItem" aria-current="page" href="#quienesSomos"
-                  >Quienes somos</a
+                  >¿Quiénes somos?</a
                 >
               </li>
               <li class="nav-item">
@@ -65,7 +73,7 @@
               </li>
               <li class="nav-item">
                 <a class="navItem" aria-current="page" href="#eleginos"
-                  >Por qué elegirnos</a
+                  >¿Por qué elegirnos?</a
                 >
               </li>
               <li class="nav-item">
@@ -137,8 +145,7 @@
             <div class="cardServicios">
               <div class="cardHeader">
                 <img
-                  src="./img/servicios/documento.png"
-                  alt="ilustración de un documento"
+                  src="https://img.icons8.com/pulsar-line/96/null/hand-with-pen.png"
                   class="serviciosPNG"
                 />
                 <h6>Escribania</h6>
@@ -155,8 +162,7 @@
             <div class="cardServicios">
               <div class="cardHeader">
                 <img
-                  src="./img/servicios/estetoscopio.png"
-                  alt="ilustración de un documento"
+                  src="https://img.icons8.com/pulsar-line/96/null/stethoscope.png"
                   class="serviciosPNG"
                 />
                 <h6>Médico legista</h6>
@@ -173,8 +179,7 @@
             <div class="cardServicios">
               <div class="cardHeader">
                 <img
-                  src="./img/servicios/cerebro.png"
-                  alt="ilustración de un documento"
+                  src="https://img.icons8.com/pulsar-line/96/null/brain.png"
                   class="serviciosPNG"
                 />
                 <h6>Psicólogos</h6>
@@ -192,8 +197,7 @@
             <div class="cardServicios">
               <div class="cardHeader">
                 <img
-                  src="./img/servicios/apreton-de-manos.png"
-                  alt="ilustración de un documento"
+                  src="https://img.icons8.com/pulsar-line/96/null/handshake.png"
                   class="serviciosPNG"
                 />
                 <h6>Mediadores</h6>
@@ -210,8 +214,7 @@
             <div class="cardServicios">
               <div class="cardHeader">
                 <img
-                  src="./img/servicios/leer-el-mensaje.png"
-                  alt="ilustración de un documento"
+                  src="https://img.icons8.com/pulsar-line/96/null/feedback.png"
                   class="serviciosPNG"
                 />
                 <h6>Notificadores</h6>
@@ -357,7 +360,9 @@
         <div class="porqueContainer">
           <div class="porqueCard">
             <div class="porqueTitulo">
-              <img src="./img/por-que-elegirnos/dinamica-positiva.png" alt="" />
+              <img
+                src="https://img.icons8.com/pulsar-line/96/null/bullish.png"
+              />
             </div>
             <h2>Eficiencia y profesionalidad</h2>
             <p>
@@ -368,7 +373,9 @@
           </div>
           <div class="porqueCard">
             <div class="porqueTitulo">
-              <img src="./img/por-que-elegirnos/pareja-objetivo.png" alt="" />
+              <img
+                src="https://img.icons8.com/pulsar-line/96/null/online-support.png"
+              />
             </div>
             <h2>Asesoramiento personalizado</h2>
             <p>
@@ -378,7 +385,7 @@
           </div>
           <div class="porqueCard">
             <div class="porqueTitulo">
-              <img src="./img/por-que-elegirnos/minutero.png" alt="" />
+              <img src="https://img.icons8.com/pulsar-line/96/null/clock.png" />
             </div>
             <h2>Rápida performance</h2>
             <p>
@@ -393,62 +400,93 @@
           <h2>Contactanos</h2>
         </div>
         <div class="contactContainer">
-          <div class="infoContact">
-            <div>
-              <h4>¿Dónde estamos?</h4>
-              <p>Aristóbulo Del Valle 2884</p>
-              <p>CP: 1744, Moreno, Buenos Aires</p>
-              <p>Uruguay 627 PB "A"</p>
-              <p>CP: 1015, Ciudad Autónoma de Buenos Aires</p>
-            </div>
-            <div>
-              <h4>Contáctenos</h4>
-              <p>Whatsapp:</p>
-              <p>+54 9 11 2478 7972</p>
-              <p>Email:</p>
-              <p>info@estudiojuridicorodriguezfraga.com</p>
-              <p>Teléfono de emergencias:</p>
-              <p>+54 9 2324 52 0708</p>
-            </div>
-            <div>
-              <h4>Horarios</h4>
-              <p>Lunes a viernes</p>
-              <p>11 a 19 hs</p>
-            </div>
-          </div>
           <div class="formularioContacto">
-            <form id="contact-form" method="post">
-              <div class="form-group">
-                <label for="name">Nombre:</label>
+            <form id="form">
+              <div class="field form-group">
+                <label for="from_name">Nombre: <span>*</span></label>
+                <input type="text" name="from_name" id="from_name" required />
+              </div>
+              <div class="field form-group">
+                <label for="from_email"
+                  >Correo electrónico: <span>*</span></label
+                >
+                <input type="text" name="from_email" id="from_email" required />
+              </div>
+              <div class="field form-group">
+                <label for="from_phone"
+                  >Teléfono: <span class="spanTelefono">(opcional)</span></label
+                >
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
-                  id="name"
-                  name="name"
-                  required
+                  name="from_phone"
+                  id="from_phone"
                 />
               </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Mensaje:</label>
+              <div class="field form-group">
+                <label for="message">Mensaje: <span>*</span></label>
                 <textarea
-                  class="form-control formularioMensaje"
-                  id="message"
+                  type="text"
                   name="message"
+                  id="message"
+                  class="formularioMensaje"
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <input
+                type="submit"
+                id="formButton"
+                class="btn btn-primary"
+                value="Enviar consulta"
+              />
             </form>
+          </div>
+          <div class="infoContact">
+            <div class="infoColumn">
+              <h4>¿Dónde estamos?</h4>
+              <p>
+                Aristóbulo Del Valle 2884<br />CP: 1744, Moreno, Buenos Aires
+              </p>
+              <p>
+                Uruguay 627 PB "A"<br />CP: 1015, Ciudad Autónoma de Buenos
+                Aires
+              </p>
+              <div class="contactMap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1413257887098!2d-58.79161688415451!3d-34.65113364685236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94568c2188dd%3A0x5f5d073303094297!2sPlaza%20Mariano%20Moreno!5e0!3m2!1ses!2sar!4v1682983281428!5m2!1ses!2sar"
+                  width="350"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="infoColumn">
+              <h4>Contáctenos</h4>
+              <p>
+                Whatsapp:<br /><a
+                  href="https://wa.me/5491130693199"
+                  target="_blank"
+                  >+54 9 11 2478 7972</a
+                >
+              </p>
+              <p>
+                Email:<br /><a href="mailto:principijuan@gmail.com"
+                  >principijuan@gmail.com</a
+                >
+              </p>
+              <p>
+                Teléfono de emergencias:<br /><a href="tel:+5491130693199"
+                  >+54 9 11 2478 7972</a
+                >
+              </p>
+            </div>
+            <div class="infoColumn">
+              <h4>Horarios</h4>
+              <p>Lunes a viernes<br />11 a 19 hs</p>
+            </div>
           </div>
         </div>
       </section>
@@ -462,6 +500,14 @@
     </footer>
     <script src="/js/navbar.js"></script>
     <script src="/js/contacto.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("c9kml2jsOI1usNaxl");
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

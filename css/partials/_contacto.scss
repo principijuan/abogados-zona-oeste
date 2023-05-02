@@ -49,21 +49,54 @@ textarea:focus {
 }
 
 #sectionContact {
-  width: 75%;
   margin: auto;
-  margin-top: 8vh;
+  padding: 5vh;
   margin-bottom: 10vh;
   .sectionTitle {
     text-align: center;
   }
   .contactContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10vh;
+    span {
+      color: red;
+      font-weight: 200;
+    }
+    .spanTelefono {
+      color: $primaryColor;
+      font-weight: 200;
+      font-size: smaller;
+    }
+    h6 {
+      font-weight: 200;
+      font-size: small;
+    }
     .infoContact {
       text-align: center;
       display: flex;
-      flex-direction: column;
-      gap: 3vh;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 2vh;
+      .infoColumn {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+          text-decoration: none;
+        }
+      }
+      div {
+        margin: 2vh;
+      }
+      .contactMap {
+        border: solid 1px #cccccc;
+      }
     }
   }
   .contact-form {

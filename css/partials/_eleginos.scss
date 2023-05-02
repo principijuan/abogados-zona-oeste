@@ -1,7 +1,12 @@
 #eleginos {
   background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
   .sectionTitle h2 {
     margin: auto;
+    margin-top: 6vh;
     text-align: center;
     color: $secondaryColor;
   }
@@ -9,8 +14,9 @@
     display: flex;
     align-items: stretch;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 6vh;
-    gap: 10vh;
+    gap: 5vh;
     .porqueCard {
       width: 35vh;
       padding: 4vh;
@@ -21,8 +27,6 @@
       background-color: $backgroundColor;
       border-radius: $borderRadius;
       .porqueTitulo {
-        border-radius: 100%;
-        box-shadow: $boxShadow;
         width: 10vh;
         height: 10vh;
         text-align: center;

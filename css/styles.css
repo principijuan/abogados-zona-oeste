@@ -1,6 +1,6 @@
 @charset "UTF-8";
 footer {
-  background-color: #2c3f46;
+  background-color: #4d4d4d;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -12,10 +12,6 @@ footer .legalesFooter {
   font-weight: 200;
   font-size: 0.75rem;
   margin-bottom: 0px;
-}
-
-header {
-  background-color: darkslategrey;
 }
 
 .bienvenida {
@@ -32,11 +28,16 @@ header {
 .bienvenida .logoBienvenida {
   min-width: 100px;
   width: 10vw;
+  margin-top: 20vh;
   filter: drop-shadow(-3px -3px -2px rgba 255, 255, 255, 5);
 }
 .bienvenida h1 {
   color: #f2f2f2;
   font-family: "Archivo", sans-serif;
+}
+
+header {
+  background-color: darkslategrey;
 }
 
 .containerNavBar {
@@ -47,17 +48,15 @@ header {
   font-family: "Archivo", sans-serif;
   color: #f2f2f2;
   display: flex;
-  flex-direction: row;
-  vertical-align: bottom;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 2vh;
 }
 .containerNavBar .navBarLogo img {
   width: 30px;
 }
-.containerNavBar .navBarItems {
-  display: flex;
-  justify-content: flex-end;
-  color: #f2f2f2;
+.containerNavBar .navBarLogo h5 {
+  margin: 0px;
 }
 .containerNavBar .navBarItems .nav-item {
   display: flex;
@@ -70,7 +69,7 @@ header {
 .nav_bar {
   position: sticky; /* permite que la barra de navegación se fije en la parte superior de la página */
   top: 0; /* coloca la barra de navegación en la parte superior de la página */
-  background-color: #2c3f46 !important;
+  background-color: #4d4d4d !important;
   display: flex;
   color: #f2f2f2;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
@@ -122,9 +121,11 @@ body {
 }
 
 .imagenIntermedia {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/mariano_moreno.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../img/tribunales.jpg");
   background-size: cover;
+  background-position: top;
   height: 80vh;
+  padding: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,9 +193,8 @@ textarea:focus {
 }
 
 #sectionContact {
-  width: 75%;
   margin: auto;
-  margin-top: 8vh;
+  padding: 5vh;
   margin-bottom: 10vh;
 }
 #sectionContact .sectionTitle {
@@ -202,13 +202,47 @@ textarea:focus {
 }
 #sectionContact .contactContainer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10vh;
+}
+#sectionContact .contactContainer span {
+  color: red;
+  font-weight: 200;
+}
+#sectionContact .contactContainer .spanTelefono {
+  color: #4d4d4d;
+  font-weight: 200;
+  font-size: smaller;
+}
+#sectionContact .contactContainer h6 {
+  font-weight: 200;
+  font-size: small;
 }
 #sectionContact .contactContainer .infoContact {
   text-align: center;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2vh;
+}
+#sectionContact .contactContainer .infoContact .infoColumn {
+  width: 30%;
+  display: flex;
   flex-direction: column;
-  gap: 3vh;
+  align-items: center;
+}
+#sectionContact .contactContainer .infoContact .infoColumn a {
+  text-decoration: none;
+}
+#sectionContact .contactContainer .infoContact div {
+  margin: 2vh;
+}
+#sectionContact .contactContainer .infoContact .contactMap {
+  border: solid 1px #cccccc;
 }
 #sectionContact .contact-form {
   width: 20vh;
@@ -224,22 +258,24 @@ textarea:focus {
 }
 
 #quienesSomos {
-  width: 80%;
   margin: auto;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 #quienesSomos h2 {
   font-family: "Archivo", sans-serif;
 }
 #quienesSomos .quienesSomosImagen {
-  width: 50%;
+  width: 60vh;
   margin: 5vh;
 }
 #quienesSomos .quienesSomosTexto {
-  width: 75%;
+  width: 50vw;
   margin: 2vh;
 }
 #quienesSomos .btnContact a {
@@ -248,7 +284,7 @@ textarea:focus {
 }
 
 #servicios {
-  background-color: #2c3f46;
+  background-color: #4d4d4d;
   color: #f2f2f2;
   padding: 4vh;
 }
@@ -261,15 +297,17 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6vh;
 }
 #servicios .serviciosContainer .cardServiciosContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  gap: 4vh;
+  justify-content: center;
+  gap: 3vh;
   margin: auto;
+  margin-bottom: 4vh;
+  width: 100%;
 }
 #servicios .serviciosContainer .cardServiciosContainer .cardServicios {
   background-color: #f2f2f2;
@@ -281,11 +319,15 @@ textarea:focus {
   margin-top: 2vh;
   text-align: center;
 }
+#servicios .serviciosContainer .cardServiciosContainer .cardServicios .cardHeader .serviciosPNG {
+  width: 80px;
+  margin: 2vh;
+}
 #servicios .serviciosContainer .cardServiciosContainer .cardServicios .card-body {
   margin: 2vh;
 }
 #servicios .serviciosContainer .cardServiciosContainer .cardServicios .card-text {
-  width: 30vh;
+  width: 25vh;
 }
 #servicios .serviciosContainer .accordion {
   width: 100%;
@@ -296,10 +338,15 @@ textarea:focus {
 }
 
 #eleginos {
-  background-color: #2c3f46;
+  background-color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
 }
 #eleginos .sectionTitle h2 {
   margin: auto;
+  margin-top: 6vh;
   text-align: center;
   color: #f2f2f2;
 }
@@ -307,8 +354,9 @@ textarea:focus {
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 6vh;
-  gap: 10vh;
+  gap: 5vh;
 }
 #eleginos .porqueContainer .porqueCard {
   width: 35vh;
@@ -321,8 +369,6 @@ textarea:focus {
   border-radius: 6px;
 }
 #eleginos .porqueContainer .porqueCard .porqueTitulo {
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
   width: 10vh;
   height: 10vh;
   text-align: center;
