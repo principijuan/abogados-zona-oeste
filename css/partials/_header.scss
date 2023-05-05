@@ -6,17 +6,19 @@
   background-image: url("../../img/mariano_moreno.webp");
   background-size: cover;
   background-position: center;
-  height: 1080px;
+  padding: 5vh;
+  height: 100vh;
   gap: 20px;
   .logoBienvenida {
     min-width: 100px;
     width: 10vw;
-    margin-top: 20vh;
+    margin-top: 25vh;
     filter: drop-shadow(-3px -3px -2px rgba (255, 255, 255, 5));
   }
   h1 {
     color: $secondaryColor;
     font-family: $font;
+    text-align: center;
   }
 }
 
@@ -25,20 +27,28 @@ header {
 }
 
 .containerNavBar {
-  display: flex;
-  justify-content: space-between;
   .navBarLogo {
     font-family: $font;
     color: $secondaryColor;
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
     flex-wrap: nowrap;
     gap: 2vh;
-    img {
-      width: 30px;
-    }
-    h5 {
-      margin: 0px;
+    .navBarBrand {
+      font-family: $font;
+      color: $secondaryColor;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 2vh;
+      img {
+        width: 30px;
+      }
+      h5 {
+        margin: 0px;
+      }
     }
   }
   .navBarItems {
@@ -47,7 +57,10 @@ header {
       flex-direction: row;
       gap: 2vh;
       align-items: center;
-      margin: 0vh 2vh;
+      margin: 1vh 2vh;
+      a {
+        white-space: nowrap;
+      }
     }
   }
 }
@@ -77,4 +90,8 @@ header {
 .btnContact {
   text-decoration: none;
   color: $secondaryColor;
+}
+
+.justify-content-end {
+  display: flex;
 }

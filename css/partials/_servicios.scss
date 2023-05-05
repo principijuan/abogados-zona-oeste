@@ -22,27 +22,8 @@
       margin: auto;
       margin-bottom: 4vh;
       width: 100%;
-      .cardServicios {
-        background-color: $backgroundColor;
-        color: #000000;
-        border-radius: $borderRadius;
-        .cardHeader {
-          margin: auto;
-          margin-top: 2vh;
-          text-align: center;
-          .serviciosPNG {
-            width: 80px;
-            margin: 2vh;
-          }
-        }
-        .card-body {
-          margin: 2vh;
-        }
-        .card-text {
-          width: 25vh;
-        }
-      }
     }
+
     .accordion {
       width: 100%;
       margin: auto;
@@ -51,4 +32,58 @@
       }
     }
   }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 275px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 1vh;
+}
+
+.flip-card-front {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+}
+
+.flip-card-back {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  transform: rotateY(180deg);
+}
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

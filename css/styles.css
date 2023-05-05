@@ -22,29 +22,37 @@ footer .legalesFooter {
   background-image: url("../../img/mariano_moreno.webp");
   background-size: cover;
   background-position: center;
-  height: 1080px;
+  padding: 5vh;
+  height: 100vh;
   gap: 20px;
 }
 .bienvenida .logoBienvenida {
   min-width: 100px;
   width: 10vw;
-  margin-top: 20vh;
+  margin-top: 25vh;
   filter: drop-shadow(-3px -3px -2px rgba 255, 255, 255, 5);
 }
 .bienvenida h1 {
   color: #f2f2f2;
   font-family: "Archivo", sans-serif;
+  text-align: center;
 }
 
 header {
   background-color: darkslategrey;
 }
 
-.containerNavBar {
-  display: flex;
-  justify-content: space-between;
-}
 .containerNavBar .navBarLogo {
+  font-family: "Archivo", sans-serif;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 2vh;
+}
+.containerNavBar .navBarLogo .navBarBrand {
   font-family: "Archivo", sans-serif;
   color: #f2f2f2;
   display: flex;
@@ -52,10 +60,10 @@ header {
   flex-wrap: nowrap;
   gap: 2vh;
 }
-.containerNavBar .navBarLogo img {
+.containerNavBar .navBarLogo .navBarBrand img {
   width: 30px;
 }
-.containerNavBar .navBarLogo h5 {
+.containerNavBar .navBarLogo .navBarBrand h5 {
   margin: 0px;
 }
 .containerNavBar .navBarItems .nav-item {
@@ -63,7 +71,10 @@ header {
   flex-direction: row;
   gap: 2vh;
   align-items: center;
-  margin: 0vh 2vh;
+  margin: 1vh 2vh;
+}
+.containerNavBar .navBarItems .nav-item a {
+  white-space: nowrap;
 }
 
 .nav_bar {
@@ -91,6 +102,10 @@ header {
 .btnContact {
   text-decoration: none;
   color: #f2f2f2;
+}
+
+.justify-content-end {
+  display: flex;
 }
 
 body {
@@ -276,12 +291,8 @@ textarea:focus {
   margin: 5vh;
 }
 #quienesSomos .quienesSomosTexto {
-  width: 50vw;
-  margin: 2vh;
-}
-#quienesSomos .btnContact a {
-  text-decoration: none;
-  color: #f2f2f2;
+  width: 110vh;
+  margin: 5vh;
 }
 
 #servicios {
@@ -310,32 +321,66 @@ textarea:focus {
   margin-bottom: 4vh;
   width: 100%;
 }
-#servicios .serviciosContainer .cardServiciosContainer .cardServicios {
-  background-color: #f2f2f2;
-  color: #000000;
-  border-radius: 6px;
-}
-#servicios .serviciosContainer .cardServiciosContainer .cardServicios .cardHeader {
-  margin: auto;
-  margin-top: 2vh;
-  text-align: center;
-}
-#servicios .serviciosContainer .cardServiciosContainer .cardServicios .cardHeader .serviciosPNG {
-  width: 80px;
-  margin: 2vh;
-}
-#servicios .serviciosContainer .cardServiciosContainer .cardServicios .card-body {
-  margin: 2vh;
-}
-#servicios .serviciosContainer .cardServiciosContainer .cardServicios .card-text {
-  width: 25vh;
-}
 #servicios .serviciosContainer .accordion {
   width: 100%;
   margin: auto;
 }
 #servicios .serviciosContainer .accordion .accordion-button {
   background-color: #f2f2f2;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 275px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 1vh;
+}
+
+.flip-card-front {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+}
+
+.flip-card-back {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+  transform: rotateY(180deg);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #eleginos {

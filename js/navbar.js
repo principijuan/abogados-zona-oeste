@@ -1,5 +1,5 @@
 // selecciona la imagen de bienvenida
-var imagenBienvenida = document.querySelector("#bienvenidaID");
+var imagenBienvenida = document.querySelector(".bienvenida");
 
 // selecciona la barra de navegación
 var navbar = document.querySelector(".nav_bar");
